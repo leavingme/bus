@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+	author: hong
+	email: huanghong@hotmail.com
+	homepage: design-hong.com	*/
+
+/* ie */
+.box { *zoom: 1; }
+
+ul.city { *margin: 22px 0 0 -48px; }
+p.magazine { background-position: 0 1px; }
+p.doc { background-position: 0 -23px; _background-position: 0 -22px; }
+p.xls { background-position: -66px -23px; _background-position: -66px -22px; }
+p.notice { background-position: 0 2px; *background-position: 0 1px; _background-position: 0 3px; }
+
+form#searchForm input { *padding-top: 6px; }
+form#searchForm button { *border: 0; }
+
+.content, .sorry { *margin-top: 20px; }
+
+form#searchForm h1 a { *background-position: left -190px; }
+
+.map p.msg { background-position: left 4px; }
+
+.detail h1, .comment h2 { padding: 7px 10px; }
+.detail .info li a { margin-left: -10px; *margin-left: 0; }
+
+.sosomap { *top: 565px; }
+
+.comment p.flower { *margin-left: 65px; }
+.comment p.flower span, .comment p.to span { *display: inline; *height: 14px; *line-height: 12px; *font-size: 12px; }
+.comment form fieldset { _margin-left: 25px; }
+.comment form fieldset legend { *margin: 0 3px; *background-color: #fff; }
+.comment form textarea { overflow: hidden; *margin-bottom: 0; }
+.comment form p.face { *margin: 24px 0 0 256px; _margin-left: 156px; }
+.comment form p.face button { *margin-right: 2px; }
+
+/*.list h2 { *height: 18px; }*/
+
+.time .list, .bus .list, .station .list, .hot .list, .flower .list { _height: 300px; }
+*+html dl.stationLetter { *margin-bottom: 1px; }
+dl.stationLetter dt, dl.stationLetter dd { *float: left; *height: 24px; _height: 26px; }
+dl.stationLetter a, dl.busLetter a { _color: #fff !important; }
+dl.stationLetter a.current, dl.busLetter a.current { _color: #333 !important; }
+dl.busLetter { *margin-left: -47px; }
+/*.bus table hr { *border-top: 1px solid #fff; }*/
+.house .list .stationList input { height: 14px; *margin-right: 3px; }
+.house .list .stationList button { height: 21px; }
+.house .list .stationList li p, .house .list .stationList li form.houseEdit { *float: left; }
+.house .list .stationList li form.houseEdit p { *float: none }
+.house .list .stationList li form.houseEdit p.new { *margin: 0; }
+
+.pop .popBg {
+	_position: absolute;
+	_height: 1000px;
+	_top: expression(eval(document.compatMode &&  document.compatMode=='CSS1Compat') ?  documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 : document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);
+	filter: alpha(opacity=60);
+}
+.pop .popNotice {
+	_position: absolute;
+	_top: expression(eval(document.compatMode &&  document.compatMode=='CSS1Compat') ?  documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 : document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);
+}

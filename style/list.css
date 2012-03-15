@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+	author: hong
+	email: huanghong@hotmail.com
+	homepage: design-hong.com	*/
+
+/* list */
+#main {
+	padding: 0 10px 0 200px;
+}
+form#searchForm {
+	margin-left: -200px;
+}
+.sidebar {
+	width: 180px;
+}
+.bus, .station, .hot {
+	padding: 10px 10px 10px 57px;
+	background-color: #f2f2f2;
+}
+dl.stationLetter {
+	position: relative;
+	margin-bottom: -1px;
+}
+dl.stationLetter a, dl.busLetter a {
+	padding: 2px 8px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	background-color: #ccc;
+}
+dl.stationLetter a {
+	float: left;
+	height: 20px; /* hack opera */
+	line-height: 20px;
+	margin: 0 1px 2px 0;
+}
+dl.stationLetter a.current, dl.busLetter a.current {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+dl.stationLetter a.current {
+	margin-bottom: 0;
+	padding-bottom: 3px;
+	border-bottom: none;
+}
+dl.busLetter {
+	position: absolute;
+	width: 48px;
+	margin-left: -47px;
+}
+dl.busLetter a {
+	display: block;
+	margin: 0 2px 1px 0;
+}
+dl.busLetter a.current {
+	margin-right: 0;
+	border-right: none;
+}
+.list, p.noResults {
+	min-height: 300px;
+	padding: 20px;
+	font-family: "Microsoft YaHei", Simsun, Tahoma, Geneva, sans-serif;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+table {
+	width: 800px;
+	font-family: Tahoma, Geneva, sans-serif;
+	border-collapse: collapse;
+}
+table th, table td {
+	padding: 5px 10px;
+	border: 1px solid #e6e6e6;
+	border-bottom: none;
+	border-right: none;
+}
+table a {
+	color: #999;
+}
+table span {
+	display: block;
+	margin: 0 auto;
+	text-indent: -9999px;
+}
+.time h2, .flower h2, .house h2 {
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #999;
+}
+.time table {
+	width: auto;
+}
+.time table tr.t, .flower table {
+	text-align: left;
+}
+.time table tr.t, .bus table tr.b, .bus table td.current {
+	background-color: #f8f8f8;
+}
+.time table .t1, .bus table .cate, .flower table .rank {
+	border-left: none;
+}
+.time table td, .bus table td {
+	vertical-align: top;
+	color: #999;
+}
+.bus table {
+	width: 900px;
+}
+.bus table tr.b th {
+	width: 20%;
+}
+.station li, .hot li {
+	display: inline;
+	line-height: 2.5;
+	margin-right: 10px;
+}
+.station li a, .hot li a {
+	color: #999;
+}
+.station li.h1 a, .hot li.h1 a {
+	font-size: 14px;
+	color: #666;
+}
+.station li.h2 a, .hot li.h2 a {
+	font-size: 16px;
+	color: #333;
+}
+.station li.h3 a, .hot li.h3 a {
+	font-size: 18px;
+	color: #c00;
+}
+.flower h2 {
+	margin-bottom: 10px;
+}
+.flower ul {
+	margin-bottom: 20px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.flower ul li {
+	margin-bottom: 10px;
+}
+.flower ul li h3 {
+	font-size: 12px;
+	font-weight: normal;
+}
+.flower table th {
+	text-align: left;
+}
+.flower table th.rank, .flower table td.num {
+	text-align: center;
+}
+.flower table th.num span {
+	width: 12px;
+	height: 16px;
+	background-image: url(../images/icon.png);
+	background-position: right -39px;
+}
+.flower table td.rank span {
+	width: 15px;
+	height: 16px;
+	background-image: url(../images/icon.png);
+	background-position: left -65px;
+}
+.flower table td.rank span.r2 {
+	background-position: -15px -65px;
+}
+.flower table td.rank span.r3 {
+	background-position: -30px -65px;
+}
+.flower table td.num {
+	color: #fc2c31;
+}
+.house .list .stationList {
+	position: relative;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.house .list .stationList form#searchStation {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.house .list .stationList li {
+	margin: 5px 0;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #ccc;
+}
+.house .list .stationList li h3 {
+	float: left;
+	width: 120px;
+	font-size: 12px;
+}
+.house .list .stationList li p span, .house .list .stationList li p a {
+	color: #666;
+}
+.house .list .stationList li p a.current {
+	font-weight: bold;
+	color: #f00;
+}
+.house .list .stationList li p a {
+	text-decoration: underline;
+}
+.house .list .stationList li form.houseEdit {
+	display: none;
+}
+.house .list .stationList li p a.delete {
+	color: #999;
+}
+.house .list .stationList li p.new {
+	margin-left: 120px;
+}
+.house .list .stationList li p.new input {
+	width: 80px;
+}
+ul.category li {
+	margin-bottom: 1px;
+}
+ul.category li a {
+	display: block;
+	margin: -4px -10px;
+	padding: 4px 10px;
+	font-weight: normal;
+	background-color: #f2f2f2;
+}
+ul.category li {
+	padding: 4px 10px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #ffad1f;
+	background-image: url(../images/icon.png);
+	background-position: right -91px;
+}

@@ -1,0 +1,470 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+	author: hong
+	email: huanghong@hotmail.com
+	homepage: design-hong.com	*/
+
+/* results */
+#main {
+	padding: 0 10px 0 235px;
+}
+form#searchForm {
+	margin-left: -235px;
+}
+.map, .detail {
+	margin-bottom: 20px;
+}
+.map {
+	padding: 10px 10px 5px;
+	border: 1px solid #333;
+}
+.map #map_canvas {
+	height: 400px;
+	border: none;
+	background-image: url(../images/loading.gif);
+	background-position: center;
+}
+.map p.msg {
+	margin-top: 5px;
+	padding-left: 15px;
+	color: #666;
+	background-image: url(../images/icon_2.png);
+	background-position: left 5px;
+}
+.map p.msg a {
+	color: #666;
+	text-decoration: underline;
+}
+.detail h1, .sosomap h2, .comment h2, .sidebar h2, .sidebar h3 {
+	font-size: 12px;
+}
+.detail h1, .sosomap h2, .comment h2 {
+	padding: 6px 10px 8px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color: #f2f2f2;
+}
+.detail p.count, .sosomap p.edit {
+	float: right;
+	margin: -25px 10px 0 0;
+	color: #999;
+}
+.detail .info, .detail .pic {
+	margin: 10px;
+}
+.detail .info li a, .detail .info p {
+	font-size: 14px;
+}
+.detail .info li {
+	float: left;
+	list-style: inside upper-alpha;
+	margin-right: 10px;
+	font-size: 11px;
+	color: #999;
+}
+.detail .info li a {
+	margin-left: -3px;
+}
+.detail .info li span, .detail .info p span {
+	font-size: 12px;
+	color: #666;
+}
+.detail .info p {
+	margin-bottom: 5px;
+}
+.detail .info p span, .detail .pic li {
+	margin-right: 5px;
+}
+.detail .info p em {
+	font-size: 12px;
+	font-style: normal;
+	color: #999;
+}
+.detail .info p a.new {
+	text-decoration: underline;
+}
+.detail .pic {
+	*margin-top: -10px;
+	*margin-bottom: -20px;
+}
+.detail .pic h2 {
+	margin: 20px 0;
+	border-bottom: 1px solid #e6e6e6;
+}
+.detail .pic h2 span {
+	display: block;
+	float: left;
+	margin-top: -10px;
+	padding-right: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #fff;
+}
+.detail .pic p.master, .detail .pic ol {
+	float: left;
+}
+.detail .pic li {
+	float: left;
+}
+.detail .pic li a {
+	display: block;
+	padding: 1px;
+	border: 3px solid #e6e6e6;
+}
+.detail .pic li img {
+	width: 189px;
+	height: 142px;
+}
+.detail_bus {
+	min-height: 306px;
+	margin-right: 510px;
+}
+.sosomap {
+	position: absolute;
+	top: 563px;
+	right: 10px;
+	width: 500px;
+	height: 264px;
+}
+.sosomap p.edit a {
+	padding-left: 16px;
+	color: #c00;
+	background-image: url(../images/icon_7.png);
+	background-position: 0 2px;
+}
+.sosomap .iframe {
+	overflow: hidden;
+	width: 500px;
+	height: 264px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+.sosomap .iframe iframe {
+	width: 818px;
+	height: 400px;
+	margin: -136px 0 0 -318px;
+	border: none;
+}
+/*.sosomap .iframe p.no_result {
+	height: 200px;
+	padding: 60px 0 0 160px;
+	border: 2px dashed #ccc;
+}
+.sosomap .iframe p.no_result span.sign {
+	position: absolute;
+	margin: -30px 0 0 -100px;
+	font-size: 500%;
+	color: #e0e0e0;
+}
+.sosomap .iframe p.no_result span.title {
+	font-family: "Microsoft Yahei", "微软雅黑";
+	font-size: 30px;
+	color: #e0e0e0;
+}
+.sosomap .iframe p.no_result span.tips {
+	position: absolute;
+	width: 180px;
+	margin: 45px 0 0 -265px;
+	padding: 22px 10px 10px 10px;
+	font-size: 14px;
+	text-align: left;
+	background-color: #ebf3f8;
+	background-image: url(../images/icon_6.png);
+}*/
+.sosomap .iframe p.no_result span.tips a {
+	text-decoration: underline;
+}
+.comment li {
+	padding: 10px;
+	border-bottom: 1px dotted #e6e6e6;
+}
+.comment li.upload p.message a.reply {
+	color: #4fa3da;
+}
+.comment li.upload p.icon img {
+	border-color: #00addc;
+}
+.comment li.current {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color: #f8f8f8;
+}
+.comment h2 {
+	margin-bottom: 10px;
+}
+.comment p, .comment .textarea {
+	margin-left: 70px;
+}
+.comment p.icon {
+	float: left;
+	width: 54px;
+	margin: 0;
+	color: #666;
+	text-align: center;
+}
+.comment p.icon img {
+	display: block;
+	width: 48px;
+	height: 48px;
+	padding: 1px;
+	border: 2px solid #7fd13b;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.comment p.icon a {
+	color: #666;
+}
+.comment p.flower {
+	padding-right: 15px;
+	color: #fc2c31;
+	background-image: url(../images/icon.png);
+	background-position: right -39px;
+}
+.comment p.flower span, .comment p.to span {
+	display: inline-block;
+	overflow: hidden;
+	height: 16px;
+	line-height: 38px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 300%;
+}
+.comment p.to, .comment p.to a {
+	color: #4fa3da;
+}
+.comment p.message {
+	margin-bottom: 10px;
+	font-size: 14px;
+	word-wrap: break-word;
+}
+.comment li:hover p.message a {
+	display: inline;
+}
+.comment p.message a.reply {
+	color: #7fd13b;
+}
+.comment p.time {
+	font-size: 10px;
+	color: #999;
+}
+.comment form {
+	margin: 10px;
+}
+.comment form p, .comment .textarea {
+	clear: both;
+}
+.comment form label {
+	float: left;
+	margin-bottom: 3px;
+	font-size: 14px;
+}
+.comment form label span {
+	color: #f63;
+}
+.comment form a.open {
+	float: left;
+	width: 9px;
+	height: 9px;
+	margin: 5px 0 0 3px;
+	padding: 1px;
+	background-color: #f63;
+}
+.comment form a.open span {
+	display: block;
+	width: 1px;
+	height: 9px;
+	margin-left: 4px;
+	background-color: #fff;
+}
+.comment form a.open span span {
+	position: absolute;
+	overflow: hidden;
+	width: 9px;
+	height: 1px;
+	margin: 4px 0 0 -4px;
+	text-indent: -9999px;
+}
+.comment form input, .comment form textarea {
+	clear: both;
+}
+.comment form input {
+	display: block;
+	margin-bottom: 10px;
+}
+.comment form textarea {
+	float: left;
+	height: 100px;
+	margin-bottom: 3px;
+}
+.comment form p.face {
+	clear: none;
+	display: block;
+	float: left;
+	width: 115px;
+	margin-left: 10px;
+}
+.comment form p.face button {
+	width: 35px;
+	margin-bottom: 1px;
+	padding: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	color: #666;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color: #f2f2f2;
+}
+.comment form p.face button:hover {
+	color: #fff;
+	background-color: #4fa3da;
+}
+.comment form p.flower {
+	width: 113px;
+	margin-bottom: 10px;
+}
+.comment form p.flower label {
+	float: none;
+	font-size: 12px;
+}
+.comment form p.flower input {
+	display: inline;
+	vertical-align: middle;
+	width: auto;
+	margin: 0;
+	border: none;
+}
+.comment form fieldset {
+	clear: both;
+	float: left;
+	margin: 0 0 10px 50px;
+	border: 1px dashed #ccc;
+}
+.comment form fieldset.current {
+	display: block;
+}
+.comment form fieldset legend {
+	margin: 0 10px;
+	padding: 0 10px;
+	color: #999;
+}
+.comment form fieldset p {
+	margin: 0 19px;
+}
+.comment form fieldset input, .comment form textarea {
+	width: 300px;
+}
+.comment form fieldset input#commentBlog {
+	margin-bottom: 5px;
+}
+.sidebar h2, .list h3 a {
+	padding: 4px 10px;
+	font-weight: normal;
+}
+.sidebar h2 {
+	color: #fff;
+	background-color: #ffad1f;
+	background-image: url(../images/icon.png);
+	background-position: right -91px;
+}
+.results, .list {
+	margin-bottom: 10px;
+}
+.results li {
+	margin: 5px 0;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.results dt a {
+	display: block;
+	font-weight: bold;
+	color: #333;
+}
+.results dt a:hover {
+	text-decoration: none;
+	background-color: #f2f2f2;
+}
+.results dd {
+	margin-right: 3px;
+	color: #666;
+}
+.results dd a, .list p a {
+	white-space: nowrap;
+}
+.results dd a {
+	font-size: 12px;
+}
+.list {
+	background-color: #f2f2f2;
+}
+.list h2 {
+	position: relative;
+}
+.list .accordion {
+	padding-bottom: 1px;
+}
+.list h3 {
+	border-top: 1px solid #fff;
+}
+.list h3 a {
+	display: block;
+}
+.list h3 a:hover {
+	text-decoration: none;
+	background-color: #e6e6e6;
+}
+.list h4 {
+	position: relative;
+	margin-top: 5px;
+	font-size: 12px;
+	background-color: #fff;
+}
+.list .element {
+	overflow: hidden;
+	height: 0;
+	margin: 0 1px;
+	padding: 0 10px;
+	background-color: #fff;
+}
+.list .bd {
+	margin: -4px 0 5px;
+}
+.list p strong {
+	display: block;
+	margin-top: 3px;
+	padding-top: 3px;
+	font-weight: bold;
+	border-top: 1px dotted #e6e6e6;
+}
+.list .bd2 {
+	margin: -4px 1px 1px;
+	padding: 0 10px 3px;
+	background-color: #fff;
+}
+.sorry {
+	margin: 0 0 20px -225px;
+	padding: 30px 30px 60px;
+	border: 1px solid #ccc;
+}
+.sorry h2 {
+	margin-bottom: 10px;
+	font-family: "Microsoft YaHei", Simsun, Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #999;
+}
+.sorry li {
+	float: left;
+	margin-right: 10px;
+}
+.sorry p {
+	margin: 20px 0 10px;
+}
+
+#footer {
+	padding: 20px;
+	border-top: 1px solid #f1f1f1;
+}

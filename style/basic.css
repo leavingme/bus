@@ -1,0 +1,345 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+	author: hong
+	email: huanghong@hotmail.com
+	homepage: design-hong.com	*/
+
+/* basic */
+* {
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+}
+body {
+	min-width: 980px;
+	font: 12px/1.5 Tahoma, Geneva, sans-serif;
+	color: #333;
+}
+a {
+	color: #039;
+	text-decoration: none;
+	white-space: nowrap;
+}
+a:hover {
+	color: #f63;
+	text-decoration: underline;
+}
+li {
+	list-style: none;
+}
+img {
+	vertical-align: middle;
+	border: none;
+}
+input, textarea, select {
+	padding: 2px;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	border: 1px solid;
+	border-color: #aaa #ddd #ddd #aaa;
+}
+input {
+	width: 120px;
+}
+label, button {
+	cursor: pointer;
+}
+.box:after {
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	content: ".";
+}
+
+/* header */
+#header {
+	padding: 4px 10px;
+	padding-top: 6px\9;
+	border-bottom: 1px solid #e6e6e6;
+}
+ul.nav {
+	float: left;
+}
+ul.nav li {
+	float: left;
+	margin-right: 10px;
+}
+ul.nav li.current {
+	font-weight: bold;
+}
+ul.nav li a.sitename {
+	color: #333;
+}
+ul.nav li a.city {
+	color: #c00;
+}
+ul.city {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	width: 50px;
+	margin: 5px 0 0 57px;
+	font-weight: normal;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-top: none;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	background-color: #fff;
+}
+ul.city li {
+	float: none;
+	line-height: 2;
+	margin: 0;
+}
+ul.city li a {
+	display: block;
+}
+ul.city li a:hover {
+	color: #fff;
+	background-color: #039;
+}
+ul.nav li.new {
+	padding-right: 12px;
+	background-image: url(../images/icon_4.png);
+	background-position: right top;
+}
+p.notice, p.magazine, p.cloud, p.soso, p.photo, p.iphone, p.android {
+	float: right;
+	margin-left: 10px;
+}
+p.notice {
+	padding-left: 16px;
+	background-image: url(../images/icon.png);
+	background-position: 0 3px;
+}
+p.magazine {
+	padding-left: 18px;
+	background-image: url(../images/icon_3.png);
+	background-position: 0 3px;
+}
+p.cloud, p.soso, p.photo, p.iphone, p.android {
+	padding-left: 18px;
+	background-image: url(../images/icon_app.png);
+	background-position: 0 1px;
+	background-position: 0 0\9;
+}
+p.soso {
+	background-position: 0 -103px;
+	background-position: 0 -104px\9;
+}
+p.photo {
+	background-position: 0 -77px;
+	background-position: 0 -78px\9;
+}
+p.iphone {
+	background-position: 0 -51px;
+	background-position: 0 -52px\9;
+}
+p.android {
+	background-position: 0 -25px;
+	background-position: 0 -26px\9;
+}
+
+/* main */
+form#searchForm h1 {
+	text-indent: -9999px;
+}
+form#searchForm h1 a {
+	float: left;
+	overflow: hidden;
+	width: 120px;
+	height: 41px;
+	margin: 15px 15px 20px;
+	background-image: url(../images/icon.png);
+	background-position: left bottom;
+}
+form#searchForm p {
+	float: left;
+	width: 412px;
+	height: 29px;
+	margin: 20px auto 5px;
+}
+form#searchForm p.update {
+	float: right;
+	width: auto;
+	height: auto;
+	margin: -19px 0 0;
+	color: #ccc;
+}
+form#searchForm input {
+	position: absolute;
+	width: 400px;
+	padding: 5px;
+	font-size: 14px;
+}
+form#searchForm button {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	margin: 2px 0 0 385px;
+	border: none;
+	text-indent: -9999px;
+	background-image: url(../images/icon.png);
+	background-position: right top;
+	cursor: pointer;
+}
+form#searchForm dt, form#searchForm dd, .results dt, .results dd {
+	display: inline;
+}
+.sidebar {
+	position: absolute;
+	width: 215px;
+	top: 103px;
+	left: 10px;
+}
+.sidebar a, .stationLetter a, .busLetter a, ul.list li a {
+	outline: none;
+}
+
+/* default */
+.default {
+	margin: 80px 0 150px 0;
+}
+.default form#searchForm {
+	width: 412px;
+	margin: 0 auto;
+}
+.default form#searchForm h1 {
+	height: 72px;
+	background-image: url(../images/icon.png);
+	background-position: center -117px;
+}
+.default form#searchForm dt, form#searchForm dd {
+	color: #999;
+}
+.default form#searchForm dd a {
+	color: #666;
+}
+
+/* master */
+p.master {
+	overflow: hidden;
+	width: 120px;
+	height: 138px;
+	margin-right: 10px;
+	padding: 5px;
+	text-align: center;
+	border: 1px solid #e6e6e6;
+}
+p.master img {
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin-bottom: 2px;
+	*margin-bottom: 1px;
+}
+p.master a.name {
+	display: inline-block;
+	padding-left: 18px;
+	color: #666;
+	background-image: url(../images/icon_5.png);
+	background-position: 0 3px;
+}
+
+/* footer */
+#footer, #footer a {
+	color: #999;
+}
+#footer {
+	margin: 20px auto;
+}
+#footer p {
+	width: 248px;
+	margin: 0 auto;
+}
+#footer p a.go {
+	display: block;
+	overflow: hidden;
+	width: 87px;
+	height: 10px;
+	margin: -13px 0 0 162px;
+	text-indent: -9999px;
+	background-image: url(../images/icon.png);
+	background-position: right -190px;
+}
+
+/* pop */
+.pop, .comment p.message a.reply, .comment form a.current, .comment form fieldset {
+	display: none;
+}
+.pop .popBg {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	opacity: 0.6;
+}
+.pop .popNotice {
+	position: fixed;
+	z-index: 2;
+	width: 400px;
+	top: 50%;
+	left: 50%;
+	margin-top: -80px;
+	margin-left: -220px;
+	padding: 10px 20px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow: 0 0 20px #000;
+	-moz-box-shadow: 0 0 20px #000;
+	background-color: #fff;
+}
+.pop .popNotice p {
+	font-size: 14px;
+}
+.pop .popNotice p em {
+	font-style: normal;
+	color: #039;
+}
+.pop .popNotice p.close {
+	position: absolute;
+	right: 0;
+	margin: -25px -15px 0 0;
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-box-shadow: 0 0 10px #000;
+	-moz-box-shadow: 0 0 10px #000;
+}
+.pop .popNotice p.close a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-indent: -9999px;
+	background-image: url(../images/icon.png);
+	background-position: -160px top;
+	outline: none;
+}
+.pop .popNotice .info {
+	margin-left: -10px;
+	padding-left: 60px;
+	background-image: url(../pic/fishhuang.jpg);
+	background-position: 5px 5px;
+}
+.pop .popNotice .info ol, .pop .popNotice .info p {
+	margin-bottom: 5px;
+}
+.pop .popNotice .info ol {
+	list-style-position: inside;
+}
+.pop .sosomap_form h3 { font-size: 14px; margin-bottom: 10px; }
+.pop .sosomap_form ul li { margin-bottom: 5px; }
+.pop .sosomap_form ul li label { display: inline-block; width: 60px; }
+.pop .sosomap_form ul li input#mapUrl { width: 300px; }
+.pop .sosomap_form ul li input#mapName { width: 120px; }
+.pop .sosomap_form ul li span { color: #c00; }
+.pop .sosomap_form p.btn { margin: 0 0 10px 63px; }
+.pop .sosomap_form ol { margin-bottom: 5px; padding-top: 10px; border-top: 1px solid #ccc; }
+.pop .sosomap_form ol li { list-style: decimal inside; }

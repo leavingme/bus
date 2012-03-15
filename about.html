@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="班车, 地图, 搜索" />
+<meta name="description" content="我爱坐班车 - 有地图的班车搜索：它适用于任何一位乘坐班车的同事，特别是新同事、下班不固定时间点的同事、近期租房的同事、临时乘坐陌生路线的同事，健忘的同事等等……" />
+<meta name="author" content="Huang Hong - design-hong.com huanghong@hotmail.com" />
+<title>总结 - 我爱坐班车</title>
+<link rel="stylesheet" type="text/css" href="style/basic.css" />
+<link rel="stylesheet" type="text/css" href="style/about.css" />
+<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="style/ie.css" /><![endif]-->
+</head>
+<body>
+<div id="header" class="box">
+	<ul class="nav">
+		<li><a class="sitename" href="/">我爱坐班车</a><a class="city" href="javascript:void(0);" onclick="show('city');">[深圳]</a>
+			<ul id="city" class="city">
+				<li><a href="/?city=sz">深圳</a></li>
+				<li><a href="/?city=bj">北京</a></li>
+				<li><a href="/?city=cd">成都</a></li>
+				<li><a href="/?city=sh">上海</a></li>
+				<li><a href="/?city=gz">广州</a></li>
+			</ul>
+		</li>
+		<li><a href="list.asp?list=time">按时间</a></li>
+		<li><a href="list.asp?list=bus">按路线</a></li>
+		<li><a href="list.asp?list=station">按站点</a></li>
+		<li><a href="list.asp?list=hot">按热门</a></li>
+		<li><a href="list.asp?list=flower">小红花</a></li>
+		<li class="new"><a href="list.asp?list=house">班车进小区</a></li>
+	</ul>
+	<p class="notice"><a href="javascript:void(0);" onclick="show('pop');">招志愿者</a></p>
+	<p class="magazine"><a href="doc/eMagazine_3.exe">《热腾》第三期</a></p>
+	<!--<p class="android"><a href="doc/bus.oa.com.apk">Android</a></p>
+	<p class="iphone"><a href="iphone.html" target="_blank">iPhone</a></p>-->
+	<p class="photo"><a href="photo.asp">为班车站拍照</a></p>
+	<p class="soso"><a href="sosomap.html">班车街景</a></p>
+	<p class="cloud"><a href="cloud.asp" target="_blank">云班车手册</a></p>
+</div>
+<div id="main" class="box">
+	<div class="content content_about">
+		<h1>我爱坐班车 —— 有地图的班车搜索</h1>
+		<div class="about">
+			<p>为了能让广大同事更好地使用班车这项公司福利，我利用业余时间设计了“我爱坐班车”这个网站，体验地址：<a href="http://bus.oa.com/">http://bus.oa.com/</a>。用户只需要在搜索窗中输入路线、站点或站点周边就可以查找到班车信息，结合了Google Map API还能将信息以地图的方式直观的呈现。</p>
+			<p><img src="pic/about/0.png" title="进度表" alt="进度表" /></p>
+			<h2>想法的由来：</h2>
+			<p>入职不久，初来深圳对地名不熟悉，在使用Word文档的《班车手册》时遇到了诸多不便，后来租房子也不知道小区是否有便利的班车乘坐，非常迷茫。同事们之间询问班车路线也都是口口相传或是向司机师傅询问，效率低。</p>
+			<p>由于对API技术很感兴趣，同时负责QQ会员生活特权的重构工作；也受会员重构组的前辈影响，深信地域性生活化的应用将会是改变人类生活方式的一大亮点。例如QQ旅游酒店部分很有可能会用到地图API，迫切希望能有一个小的项目实践中学习。于是，这个念头便产生了。</p>
+			<h2>适用的人群：</h2>
+			<p>它适用于任何一位乘坐班车的同事，特别是新同事、下班不固定时间点的同事、近期租房的同事、临时乘坐陌生路线的同事，健忘的同事等等……</p>
+			<h2>网站的特色：</h2>
+			<ol>
+				<li><strong>简洁的界面，让用户尽可能少的思考。</strong>用户只需要简单地输入关键词，由程序去完成检索，判断用户是想查找路线，还是想查找站点，甚至根本不知道该搜索什么只是写上自家的小区名字看哪辆班车路过而已。<img src="pic/about/1.png" title="简洁的界面，让用户尽可能少的思考。" alt="简洁的界面，让用户尽可能少的思考。" /></li>
+				<li><strong>周边搜索，人性化设计提升使用体验。</strong>许多用户并不能准确地输入拗口的站点名称，但只要输入这个站点周边的小区名、地标等等就能查找到站点以及经过它的路线。<img src="pic/about/2.png" title="周边搜索，人性化设计提升使用体验。" alt="周边搜索，人性化设计提升使用体验。" /></li>
+				<li><strong>信息无冗余，便于后期维护。</strong>添加、修改只需简单的后台操作，和Google Map API的完美配合，更是让一切变得轻松。</li>
+				<li><strong>Google Map API，强大的地图功能。</strong>只需提供地址就可以通过"地理解析"定位坐标，一组坐标即可计算出行车路线，“搜索地图”可直接将信息呈现在地图上等等。<img src="pic/about/3.png" title="Google Map API，强大的地图功能。" alt="Google Map API，强大的地图功能。" /></li>
+				<li><strong>志愿者机制，促进团队文化建设。</strong><img src="pic/about/4.png" title="志愿者机制，促进团队文化建设。" alt="志愿者机制，促进团队文化建设。" /></li>
+				<li><strong>预留城市接口，下一步可轻松接入其他城市班车地图。</strong></li>
+			</ol>
+			<h2>后续的计划：</h2>
+			<p>后续工作还将完善后台管理，组织志愿者丰富图文信息，增强Google Map API应用，改进手机版，吸取用户建议设计新功能等等。</p>
+			<p>最后通过这个项目，我学会了如何使用API技术，轻松以高效率去完成原本复杂的任务；亲身参与整个项目的全过程，积累了经验并使实际的工作受益；切身地去了解用户，发掘用户的需求，跳出思维定势指导重构工作。</p>
+			<p>这只是个开始……</p>
+			<p>在此要感谢大家的支持。特别要感谢彪叔的指导，tommy和feeling的鼓励和建议，第一名体验者的olevia，谢谢大家！</p>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<p>&copy; 2010-2012 <a href="http://isd.tencent.com/">ISD webTeam</a> <a class="go" href="http://isd.tencent.com/?p=32" title="彪叔说，这将是一场革命。">@ 网站重构一组</a></p>
+</div>
+<div id="pop" class="pop">
+	<div class="popBg"></div>
+	<div class="popNotice">
+		<p class="close"><a href="javascript:void(0);" onclick="hide('pop');">关闭</a></p>
+		<div class="info">
+			<p>每条路线需一位志愿者——</p>
+			<p>志愿者需配备相机、纸笔或同等功能的手机，主要有以下几点工作：</p>
+			<ol>
+				<li>校对路线/站点</li>
+				<li>拍照取景</li>
+				<li>记录途经站点周边信息等等……</li>
+			</ol>
+			<p>欢迎乐于奉献的同学联系 <em>fishhuang</em> 谢谢~</p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="scripts/basic.js"></script> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2449263-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

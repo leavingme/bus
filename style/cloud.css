@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+	author: hong
+	email: huanghong@hotmail.com
+	homepage: design-hong.com	*/
+
+/* cloud */
+body { overflow-y: scroll; *padding-bottom: 50px; }
+.content { width: 960px; margin: 50px auto; }
+.content h1 { width: 392px; height: 35px; margin: 0 auto 30px; text-indent: -9999px; background-image: url(../images/title.png); }
+.content .table { border: 1px solid #000; }
+.content table { width: 100%; border-collapse: collapse; }
+.content table th, .content table td { padding: 5px 10px; border: 1px solid #000; }
+.content table th { background-color: #e0e0e0; }
+.content table th.time { width: 80px; }
+.content table th.bus { width: 80px; }
+.content table th a { color: #333; }
+.content table tr:hover { background-color: #f2faff; }
+.content table td.time, .content table td.bus { text-align: center; }
+.content table td.line span { color: #666; }
+.content ul.tab li { float: left; margin-right: 2px; }
+.content ul.tab li a { display: block; padding: 1px 20px 3px; padding: 2px 20px\9; color: #fff; text-decoration: none; background-color: #c00; }
+.content ul.tab li a:hover { color: #f2f2f2; }
+.content ul.tab li.current a { background-color: #000; }
+.content p.download { float: right; margin-top: -21px; *margin-top: -19px; color: #999; }

@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* header */
+#header, .sidebar {
+	position: fixed;
+	top: 0;
+}
+#header {
+	width: 100%;
+	padding: 0 0 20px;
+	border: none;
+	background-color: #fff;
+}
+#header .top {
+	position: relative;
+	z-index: 1;
+	padding: 15px 10px;
+	border-bottom: 3px solid #006;
+	background-color: #036;
+}
+#header h1 {
+	font-family: "Microsoft YaHei",Simsun,Tahoma,Geneva,sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+#header p {
+	float: right;
+	margin-top: -20px;
+	color: #fff;
+}
+#header p a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* login */
+form.login {
+	width: 500px;
+	margin: 100px auto;
+}
+form.login label {
+	margin: 0;
+}
+form.login button {
+	margin-left: 49px;
+}
+
+/* main */
+#main {
+	width: 1200px;
+	margin: 77px 0 0;
+}
+/* sidebar */
+ul.sidebar {
+	width: 160px;
+	height: 100%;
+	top: 58px;
+	left: 0;
+	border-right: 1px solid #ccc;
+}
+ul.sidebar li {
+	margin-bottom: 1px;
+}
+ul.sidebar li a {
+	display: block;
+	padding: 5px 10px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #ccc;
+}
+ul.sidebar li.current a, ul.sidebar li a:hover {
+	position: relative;
+	width: 141px;
+	text-decoration: none;
+	background-color: #999;
+}
+/* content */
+.content {
+	margin-left: 181px;
+}
+ul.tab {
+	float: right;
+	margin-bottom: 10px;
+}
+ul.tab li {
+	float: left;
+	margin-left: 10px;
+	font-size: 13px;
+}
+ul.tab li a {
+	text-decoration: underline;
+}
+ul.tab li.current a {
+	font-weight: bold;
+}
+table, form {
+	clear: both;
+}
+table {
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-collapse: collapse; 
+}
+table tr:hover {
+	background-color: #f8f8f8;
+}
+table th, table td {
+	padding: 0.3em 0.5em;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+table th {
+	background-color: #f2f2f2;
+}
+table th a {
+	color: #333;
+}
+table th a span {
+	font-weight: normal;
+}
+table td {
+	text-align: center;
+}
+.bus table td.station, .station table td.station, .station table td.bus, .station table td.keyword, .station table td.map, .member table td.member, .member table td.blog, .member table td.face, .member table td.volunteer, .member table td.time, .comment table td.member, .comment table td.busStation, .comment table td.message, .comment table td.ip, .comment table td.time, .search table td.keyword, search table td.time, .operate table td.operate, .operate table td.time {
+	text-align: left;
+}
+.bus table td.station {
+	width: 400px;
+}
+.station table td.bus {
+	width: 150px;
+}
+.member table td.blog, .member table td.face {
+	width: 180px;
+	word-break: break-all;
+}
+form, table {
+	margin-bottom: 20px;
+}
+form fieldset {
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+form fieldset legend {
+	margin: 0 20px;
+	padding: 0 10px;
+	font-weight: bold;
+}
+form p {
+	margin: 0 0 5px 30px;
+}
+.station form p span {
+	display: block;
+	margin-left: 63px;
+	font-size: 11px;
+	color: #f00;
+}
+form label {
+	float: left;
+	width: 50px;
+	margin: 2px 10px 0 0;
+	text-align: right;
+}
+form input, form textarea {
+	width: 150px;
+	padding: 3px;
+	border-color: #aaa #ddd #ddd #aaa;
+	background-color: #fbfcfd;
+}
+form input.short {
+	width: 72px;
+}
+form input[disabled], form input[readonly], form option[selected] {
+	background-color: #ece9d8;
+}
+form input:focus, form textarea:focus {
+	border-color: #c5cee0;
+	background-color: #fff;
+}
+form select {
+	width: 80px;
+}
+form textarea {
+	height: 60px;
+}
+form button {
+	margin: 5px 0 0 59px;
+}
+form ol {
+	margin: 20px 0 0 110px;
+	color: #999;
+}
+#map_canvas {
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	top: 135px;
+	left: 470px;
+}
+.station #map_canvas {
+	top: 115px;
+}
+.lineList, .keywordList, .cityList, .categoryList, .timeList {
+	float: left;
+	margin-right: 20px;
+}
+.lineList h2, .keywordList h2, .cityList h2, .categoryList h2, .timeList h2 {
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+.lineList table, .lineList form p label, .lineList table td.station, .keywordList table, .keywordList form p label, .cityList form p label, .categoryList form p label, .timeList form p label, .search table, .operate table {
+	width: auto;
+}
+.lineList form p, .keywordList form p, .cityList form p, .categoryList form p, .timeList form p {
+	margin-left: 0;
+}
+.lineList form p button, .keywordList form p button, .cityList form p button, .categoryList form p button, .timeList form p button {
+	margin-left: 37px;
+}
+.lineList form p button[type='button'] {
+	margin: 0;
+	color: #666;
+	border: 1px solid #ccc;
+	border-color: #ccc #999 #999 #ccc;
+	background-color: #e6e6e6;
+}
+.lineList form ol, .keywordList form ol, .cityList ol, .categoryList form ol, .timeList form ol {
+	margin-left: 60px;
+}
+.comment table, .search table {
+	margin-bottom: 10px;
+}
+.comment table td.message {
+	width: 400px;
+}
+.search ul.tab {
+	float: left;
+}
+.search ul.tab li {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+/* ie */
+form fieldset legend { margin-bottom: 20px\9; }
+body { *background-image: url(../images/ie.png); *background-position: center 100px; }
+body * { *display: none; }

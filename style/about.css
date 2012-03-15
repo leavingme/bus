@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+	author: hong
+	email: huanghong@hotmail.com
+	homepage: design-hong.com	*/
+
+/* about */
+.content { width: 1000px; margin: 50px auto; }
+.content_weibo h1 a { display: block; overflow: hidden; width: 426px; height: 35px; margin: 0 auto 20px; text-indent: -9999px; background-image: url(../images/title.png); background-position: 0 -35px; }
+.content_weibo .weibo { margin-bottom: 20px; }
+.content_weibo .weibo ul.intro { float: right; width: 389px; height: 321px; padding: 50px 10px; color: #fff; background-color: #000; }
+.content_weibo .weibo ul.intro li { margin-bottom: 20px; }
+.content_weibo .weibo ul.intro li a { color: #fff; text-decoration: underline; }
+.content_weibo .weibo ul.intro li.title { font-size: 14px; font-weight: bold; }
+.content_weibo .weibo ul.intro li.data, .content .weibo ul.intro li.data a { color: #666; }
+.content_weibo .weibo ul.intro li.data { margin-top: 165px; }
+.content_weibo .weibo p.pic { float: left; width: 591px; }
+.content_weibo .list h2 { margin-bottom: 10px; padding-bottom: 5px; font-size: 14px; color: #000; border-bottom: 2px solid #000; }
+.content_weibo .list li { float: left; }
+.content_about h1 { display: block; width: 497px; height: 35px; margin: 0 auto 20px; text-indent: -9999px; background: url(../images/title.png); background-position: 0 -70px; }
+.content_about .about { width: 800px; margin: 0 auto; padding: 30px; border: 1px solid #ccc; }
+.content_about .about h2 { margin: 20px 0 10px; padding-bottom: 5px; font-size: 14px; border-bottom: 1px solid #333; }
+.content_about .about p { margin-bottom: 5px; text-indent: 2em; }
+.content_about .about p a { color: #333; text-decoration: underline; }
+.content_about .about ol li { list-style: decimal outside; margin: 0 0 10px 20px; }
+.content_about .about img { display: block; }
+.content_sosomap h1 { display: block; width: 356px; height: 35px; margin: 0 auto 20px; text-indent: -9999px; background: url(../images/title.png); background-position: 0 -105px; }
+.content_sosomap p, .content_sosomap ol { margin-bottom: 10px; font-size: 14px; }
+.content_sosomap ol li { list-style: decimal inside; }

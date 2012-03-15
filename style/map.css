@@ -1,0 +1,116 @@
+﻿/* CSS Document */
+/*
+	author: benjaminli
+	email:  benjaminli@tencent.com
+*/
+
+/* v2 */
+#searchwell .unselected {
+    background-image: url(../images/mm_20_yellow.png);
+    MARGIN-TOP: 5px;
+    PADDING-LEFT: 18px;
+    BACKGROUND-REPEAT: no-repeat;
+    BACKGROUND-POSITION: left top;
+    PADDING-TOP: 1px
+}
+#searchwell .red {
+	background-image: url(../images/mm_20_red.png)
+}
+.unselected .select {
+    COLOR: #7777cc;
+    CURSOR: pointer;
+    TEXT-DECORATION: underline
+}
+.gs-watermark {
+	DISPLAY: none
+}
+
+/* ContextMenu */
+#contextMenu
+{
+    position: absolute;
+    width: 180px;
+    z-index: 1000;
+    background: #fff;
+    border-top: solid 1px #CCC;
+    border-left: solid 1px #CCC;
+    border-bottom: solid 1px #676767;
+    border-right: solid 1px #676767;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+#contextMenu a
+{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    line-height: 22px;
+    height: 22px;
+    padding: 1px 10px;
+}
+
+#contextMenu li
+{
+    list-style: none;
+    padding: 1px;
+    margin: 0px;
+}
+#contextMenu li:hover
+{
+    background-color: #A7C4FA;
+}
+#contextMenu li.separator
+{
+    border-top: solid 1px #ccc;
+}
+/* Result Div */
+.FavTrue
+{
+    width: 16px;
+    height: 16px;
+    margin-bottom: -2px;
+    margin-right: 2px;
+    margin-left: 2px;
+    cursor: pointer;
+    background: url(/images/lhp-misc3.png) no-repeat 0px 0px;
+}
+.FavFalse
+{
+    width: 16px;
+    height: 16px;
+    margin-bottom: -2px;
+    margin-right: 2px;
+    margin-left: 2px;
+    cursor: pointer;
+    background: url(/images/lhp-misc3.png) no-repeat -16px 0px;
+}
+#div_result .unselected
+{
+    background-image: url(../images/mm_20_yellow.png);
+    margin-top: 5px;
+    padding-left: 18px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 1px;
+}
+#div_result .red
+{
+    background-image: url(../images/mm_20_red.png);
+}
+.unselected .select
+{
+    color: #7777cc;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.loading
+{
+    background-image: url(../images/loading.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 24px;
+    padding-left: 30px;
+    margin-top: 5px;
+    padding-top: 3px;
+}

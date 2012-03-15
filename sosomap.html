@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="班车, 地图, 搜索" />
+<meta name="description" content="我爱坐班车 - 有地图的班车搜索：它适用于任何一位乘坐班车的同事，特别是新同事、下班不固定时间点的同事、近期租房的同事、临时乘坐陌生路线的同事，健忘的同事等等……" />
+<meta name="author" content="Huang Hong - design-hong.com huanghong@hotmail.com" />
+<title>班车街景 - 我爱坐班车</title>
+<link rel="stylesheet" type="text/css" href="style/basic.css" />
+<link rel="stylesheet" type="text/css" href="style/about.css" />
+<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="style/ie.css" /><![endif]-->
+</head>
+<body>
+<div id="header" class="box">
+	<ul class="nav">
+		<li><a class="sitename" href="/">我爱坐班车</a><a class="city" href="javascript:void(0);" onclick="show('city');">[深圳]</a>
+			<ul id="city" class="city">
+				<li><a href="/?city=sz">深圳</a></li>
+				<li><a href="/?city=bj">北京</a></li>
+				<li><a href="/?city=cd">成都</a></li>
+				<li><a href="/?city=sh">上海</a></li>
+				<li><a href="/?city=gz">广州</a></li>
+			</ul>
+		</li>
+		<li><a href="list.asp?list=time">按时间</a></li>
+		<li><a href="list.asp?list=bus">按路线</a></li>
+		<li><a href="list.asp?list=station">按站点</a></li>
+		<li><a href="list.asp?list=hot">按热门</a></li>
+		<li><a href="list.asp?list=flower">小红花</a></li>
+		<li class="new"><a href="list.asp?list=house">班车进小区</a></li>
+	</ul>
+	<p class="notice"><a href="javascript:void(0);" onclick="show('pop');">招志愿者</a></p>
+	<p class="magazine"><a href="doc/eMagazine_3.exe">《热腾》第三期</a></p>
+	<!--<p class="android"><a href="doc/bus.oa.com.apk">Android</a></p>
+	<p class="iphone"><a href="iphone.html" target="_blank">iPhone</a></p>-->
+	<p class="photo"><a href="photo.asp">为班车站拍照</a></p>
+	<p class="soso"><a href="sosomap.html">班车街景</a></p>
+	<p class="cloud"><a href="cloud.asp" target="_blank">云班车手册</a></p>
+</div>
+<div id="main" class="box">
+	<div class="content content_sosomap">
+		<h1>我爱坐班车 - 班车街景</h1>
+		<p class="pic"><img src="pic/station/sosomap.jpg" title="班车街景" alt="班车街景" /></p>
+		<p>“SOSO地图街景”已经支持地点搜索，并且可以通过复制链接的形式分享给好友啦~</p>
+		<p>目前还没有开放API（可能短时间比较难实现），先通过曲线方式将这个功能结合进入“我爱坐班车”，欢迎广大同学共同参与！</p>
+		<p>方法很简单：</p>
+		<ol>
+			<li>打开<a href="http://map.soso.com/" target="_blank">SOSO地图</a>；</li>
+			<li>输入班车站名，90%与公车站名相同；</li>
+			<li>在左侧搜索结果中定位到正确的位置后，点击“街景”文字链</li>
+			<li>拖、拉、拽、扯，将班车停靠点摆放在视线正中；</li>
+			<li>点击右侧“分享”按钮并复制网址，在<a href="http://bus.oa.com/">我爱坐班车</a>中新增，大功告成！</li>
+		</ol>
+		<p>你的小小举动，将给他人带来方便。滋润人的，必得滋润（《箴言》）</p>
+	</div>
+</div>
+<div id="footer">
+	<p>&copy; 2010-2012 <a href="http://isd.tencent.com/">ISD webTeam</a> <a class="go" href="http://isd.tencent.com/?p=32" title="彪叔说，这将是一场革命。">@ 网站重构一组</a></p>
+</div>
+<div id="pop" class="pop">
+	<div class="popBg"></div>
+	<div class="popNotice">
+		<p class="close"><a href="javascript:void(0);" onclick="hide('pop');">关闭</a></p>
+		<div class="info">
+			<p>每条路线需一位志愿者——</p>
+			<p>志愿者需配备相机、纸笔或同等功能的手机，主要有以下几点工作：</p>
+			<ol>
+				<li>校对路线/站点</li>
+				<li>拍照取景</li>
+				<li>记录途经站点周边信息等等……</li>
+			</ol>
+			<p>欢迎乐于奉献的同学联系 <em>fishhuang</em> 谢谢~</p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="scripts/basic.js"></script> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2449263-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
